@@ -1,7 +1,6 @@
 // import logo from './logo.svg';
 import './App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../node_modules/font-awesome/css/font-awesome.min.css';
 import Footer from './components/Footer/Footer';
 import { Route, Switch, BrowserRouter as Router } from 'react-router-dom'
 import NavbarMain from './components/Navbar/Navbar';

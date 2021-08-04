@@ -1,0 +1,25 @@
+input, textarea {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    margin: 0 0 15px;
+    padding: 2px 8px;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: inherit;
+    letter-spacing: .08em;
+    color: #000;
+    background-color: transparent;
+    border-bottom: 2px solid #000;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    outline: 0;
+    cursor: pointer;
+    -webkit-appearance: none;
+    transition: color .2s ease-out, background-color .2s ease-out, border-color .2s ease-out;
+  }
+  
