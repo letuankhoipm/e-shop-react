@@ -1,0 +1,46 @@
+@import './variables';
+
+.btn-tt {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+    margin: 0;
+    font-family: "Nunito", sans-serif;
+    font-size: 15px;
+    line-height: 2em;
+    font-weight: 600;
+    letter-spacing: .06em;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 0;
+    outline: 0;
+    transition: color .2s ease-out, background-color .2s ease-out, border-color .2s ease-out;
+    padding: 6px 39px;
+    cursor: pointer;
+}
+
+.btn-icon {
+    font-size: 20px;
+    background: transparent;
+    border: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.btn-tt-outline {
+    color: $white;
+    background: transparent;
+    border: solid 2px $white;
+}
+
+.btn-tt-black {
+    color: $dark;
+    background-color: transparent;
+    border: solid 2px $dark;
+
+    &:hover {
+        color: white;
+        background-color: $dark;
+    }
+}

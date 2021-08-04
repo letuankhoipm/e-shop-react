@@ -1,0 +1,52 @@
+.tt-navbar-mobile {
+    .tt-side-menu {
+        height: 100vh;
+        width: 100%;
+        background-size: cover;
+        transform: translate(100%, -10%);
+        z-index: 10000;
+        transition-duration: .4s;
+    }
+
+    .tt-after-stretch {
+        transform: translate(10%, -10%);
+        transition-duration: .4s;
+    }
+
+    .tt-list {
+        margin-top: 150px;
+        margin-bottom: 150px;
+    }
+}
+
+.tt-nav-item {
+    list-style-type: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Nunito", sans-serif;
+    background-color: transparent;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    &:hover {
+        background: black;
+        transition-duration: .4s;
+        color: white;
+    }
+}
+
+.tt-nav {
+    li {
+        display: inline;
+    }
+}
+
+.tt-header {
+    height: 150px;
+    background: black;
+    margin-bottom: 70px;
+}
+
+.tt-title {
+    font-size: 3rem;
+}
