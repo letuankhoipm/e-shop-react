@@ -6,6 +6,8 @@ import AboutUs from '../../components/About/About';
 
 class HomePage extends React.Component {
     render() {
+        // const data = ProductService.getProducts();
+        // console.log(data);
         return (
             <div className="tt-home-page">
                 <section className="tt-carousel mb-4">
