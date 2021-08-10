@@ -168,14 +168,16 @@ class GalleryImage extends React.Component {
 
         const scrollingElement = window;
         return (
-            <ProGallery
-                items={items}
-                options={options}
-                container={container}
-                eventsListener={eventsListener}
-                scrollingElement={scrollingElement}
-                
-            />
+            <div className="tt-gallery text-center py-4 my-4">
+                <ProGallery
+                    items={items}
+                    options={options}
+                    container={container}
+                    eventsListener={eventsListener}
+                    scrollingElement={scrollingElement}
+
+                />
+            </div>
         )
     }
 }

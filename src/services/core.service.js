@@ -13,6 +13,7 @@ class CoreService {
                 doc,
                 ...dataModel
             });
+            console.log(data);
         });
     }
 }

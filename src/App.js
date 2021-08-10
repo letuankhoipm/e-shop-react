@@ -5,6 +5,7 @@ import Footer from './components/Footer/Footer';
 import { Route, Switch, BrowserRouter as Router } from 'react-router-dom'
 import NavbarMain from './components/Navbar/Navbar';
 import HomePage from './routes/Home/Home';
+import Product from './routes/Product/Product';
 
 
 
@@ -17,6 +18,9 @@ function App() {
         <Switch>
           <Route path="/about">
             about works!
+          </Route>
+          <Route path="/products">
+            <Product></Product>
           </Route>
           <Route path="/users">
             user works!

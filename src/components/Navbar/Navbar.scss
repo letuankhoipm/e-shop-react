@@ -23,7 +23,8 @@
     list-style-type: none;
     text-transform: uppercase;
     font-weight: bold;
-    font-family: "Nunito", sans-serif;
+    font-family: "Nunito",
+        sans-serif;
     background-color: transparent;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -32,6 +33,15 @@
         background: black;
         transition-duration: .4s;
         color: white;
+    }
+
+    a {
+        color: black;
+        text-decoration: none !important;
+
+        &:hover {
+            color: white;
+        }
     }
 }
 

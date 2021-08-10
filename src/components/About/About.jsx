@@ -4,12 +4,11 @@ import './About.scss';
 class AboutUs extends React.Component {
     render() {
         return (
-            <div className="tt-about-us">
+            <div className="tt-about-us text-center">
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
-                            <img className="tt-flower" src="https://free.vector6.com/wp-content/uploads/2021/03/0000000020-hoa-tiet-vong-nguyet-que-trang-tri-png-3.png" alt="" />
-                            <h1 className="font-weight-bold my-4">
+                            <h1 className="font-weight-bold my-4 text-uppercase">
                                 Thế giới mỹ phẫm của bạn
                             </h1>
                             <p>

@@ -1,6 +1,5 @@
 import React from 'react'
 import './Banner.scss';
-import firebase from '../../firebase';
 import CoreService from "../../services/core.service";
 
 

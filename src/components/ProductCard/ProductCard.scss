@@ -1,0 +1,57 @@
+.tt-card {
+
+    &:hover {
+      .tt-prod-hover {
+        width: 95%;
+        opacity: 1;
+        transition-duration: .4s;
+  
+        button {
+          display: inline;
+        }
+      }
+  
+      .tt-card-shadow {
+        opacity: 1;
+        transition-duration: .4s;
+      }
+    }
+  
+    .tt-img-card {
+      height: 405px;
+      object-fit: contain;
+    }
+  
+    .tt-prod-hover {
+      height: 90px;
+      width: 0%;
+      opacity: 0;
+      transition-duration: .2s;
+      background: black;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      position: absolute;
+      bottom: 9%;
+      right: 0;
+  
+      button {
+        display: none;
+      }
+    }
+  
+    .tt-card-shadow {
+      opacity: 0;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      background: rgba(20, 20, 20, 0.7);
+      transition-duration: .4s;
+    }
+  
+    .tt-card-shadow-content {
+      padding-top: 30%;
+      color: white;
+    }
+  
+  }
+  

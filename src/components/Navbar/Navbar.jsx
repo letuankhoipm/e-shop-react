@@ -1,12 +1,18 @@
 import React from 'react';
 import './Navbar.scss';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from "react-router-dom";
 
 
 
 class NavbarMain extends React.Component {
     render() {
         return (
-            <div className="tt-navbar pt-4">
+            <div className="tt-navbar pt-4 text-center">
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-3 tt-logo">
@@ -15,24 +21,16 @@ class NavbarMain extends React.Component {
                         <div className="col-6 tt-list-nav text-center my-auto">
                             <ul className="tt-nav m-0 p-0">
                                 <li className="tt-nav-item px-4">
-                                    <span className="c-pointer">
-                                        trang chủ
-                                    </span>
+                                    <Link to="/">Trang chủ</Link>
                                 </li>
                                 <li className="tt-nav-item px-4">
-                                    <span className="c-pointer">
-                                        sản phẩm
-                                    </span>
+                                    <Link to="/products">Sản phẩm</Link>
                                 </li>
                                 <li className="tt-nav-item px-4">
-                                    <span className="c-pointer">
-                                        thông tin
-                                    </span>
+                                    <Link to="/products">Thông tin</Link>
                                 </li>
                                 <li className="tt-nav-item px-4">
-                                    <span className="c-pointer">
-                                        liên lạc
-                                    </span>
+                                    <Link to="/products">Liên lạc</Link>
                                 </li>
                             </ul>
                         </div>
