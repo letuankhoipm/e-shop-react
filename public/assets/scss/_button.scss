@@ -18,6 +18,7 @@
     transition: color .2s ease-out, background-color .2s ease-out, border-color .2s ease-out;
     padding: 6px 39px;
     cursor: pointer;
+    border: none;
 }
 
 .btn-icon {
@@ -42,5 +43,22 @@
     &:hover {
         color: white;
         background-color: $dark;
+    }
+}
+
+.btn-tt-underline {
+    color: black;
+    padding: 0;
+    background: transparent;
+    border-bottom: solid 2px black;
+
+    a {
+        color: black;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            color: black;
+        }
     }
 }

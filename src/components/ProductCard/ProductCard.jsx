@@ -9,11 +9,11 @@ class ProductCard extends React.Component {
                     <img className="card-img-top rounded-0 tt-img-card" src={this.props.product.imageUrl} alt="product" />
 
                     <div className="card-body">
-                        <h5 className="font-weight-bold text-uppercase text-center">
+                        <h5 className="f-bold text-uppercase text-center">
                             {this.props.product.name}
                         </h5>
                         <hr />
-                        <p className="text-center">
+                        <p className="text-right tt-curve">
                             <strong className="mr-2">$</strong>
                             <span>
                                 {this.props.product.price}

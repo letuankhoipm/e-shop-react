@@ -3,6 +3,8 @@ import CarouselItem from '../../components/Carousel/Carousel';
 import AdvertiseBanner from '../../components/Banner/Banner';
 import GalleryImage from '../../components/Gallery/Gallery';
 import AboutUs from '../../components/About/About';
+import NavbarMobile from "../../components/NavbarMobile/NavbarMobile";
+
 
 class HomePage extends React.Component {
     render() {
@@ -10,6 +12,9 @@ class HomePage extends React.Component {
         // console.log(data);
         return (
             <div className="tt-home-page">
+                <section className="d-block d-sm-none">
+                    <NavbarMobile></NavbarMobile>
+                </section>
                 <section className="tt-carousel mb-sm-4 d-none d-sm-block">
                     <CarouselItem></CarouselItem>
                 </section>

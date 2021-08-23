@@ -15,26 +15,10 @@ class Footer extends React.Component {
                                 </p>
                             </div>
                             <div className="col-12 col-sm-3 text-center">
-                                <p className="font-weight-bold">
-                                    MUA SẮM
-                                </p>
-                                <p>
-                                    Sản phẩm
-                                </p>
-                                <p>
-                                    Bộ sưu tập
-                                </p>
+
                             </div>
                             <div className="col-12 col-sm-3 text-center">
-                                <p className="font-weight-bold">
-                                    VỀ CHÚNG TÔI
-                                </p>
-                                <p>
-                                    Thông tin
-                                </p>
-                                <p>
-                                    Liên lạc
-                                </p>
+
                             </div>
                             <div className="col-12 col-sm-3">
                                 <p className="font-weight-bold tt-curve">

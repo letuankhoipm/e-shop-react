@@ -6,15 +6,12 @@ import {
     Route,
     Link
 } from "react-router-dom";
-import NavbarMobile from "../NavbarMobile/NavbarMobile";
-
 
 
 class NavbarMain extends React.Component {
     render() {
         return (
             <div>
-                <NavbarMobile></NavbarMobile>
                 <div className="tt-navbar pt-2 text-center d-none d-sm-block">
                     <div className="container-fluid">
                         <div className="row">

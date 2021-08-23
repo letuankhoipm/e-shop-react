@@ -7,13 +7,17 @@
     position: relative;
     font-family: 'Great Vibes', cursive;
     top: -60%;
-    font-size: 10rem;
 }
 
 .tt-header {
     height: 100vh;
     background: black;
     margin-bottom: 70px;
+
+    .tt-em {
+        top: -100% !important;
+        left: 5%;
+    }
 }
 
 .tt-hot {

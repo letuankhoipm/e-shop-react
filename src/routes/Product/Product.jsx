@@ -1,7 +1,13 @@
 import React, { useState } from 'react'
 import ProductCard from '../../components/ProductCard/ProductCard'
 import CoreService from "../../services/core.service";
-import "./Product.scss"
+import "./Product.scss";
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from "react-router-dom";
 
 class Product extends React.Component {
     constructor(props) {
@@ -38,11 +44,15 @@ class Product extends React.Component {
         return (
             <div className="tt-product">
                 <div className="tt-header y-4">
-                    <div className="tt-banner-prod h-100">
+                    <div className="tt-banner-prod h-100 text-center">
                         <img className="w-100 g-100 tt-banner-img" src={`${process.env.PUBLIC_URL}/assets/images/banner.jpg`} alt="#" />
-                        <h1 className="tt-title-banner text-white text-center">
+                        <h1 style={{ fontSize: `10rem` }} className="tt-title-banner text-white text-center d-none d-sm-block">
                             Bộ sưu tập
                         </h1>
+                        <img className="tt-title-banner tt-em text-center mt-4 w-25 d-block d-sm-none" src={`${process.env.PUBLIC_URL}/assets/images/em.svg`} alt="tt-logo" />
+                        <h5 style={{ fontSize: `4rem` }} className="tt-title-banner tt-curve text-center text-white d-block d-sm-none">
+                            Bộ sưu tập
+                        </h5>
                     </div>
                 </div>
                 <div className="container">
@@ -52,6 +62,14 @@ class Product extends React.Component {
                                 Nổi bật
                             </h3>
                             <hr />
+                            <p className="my-4 text-right d-block d-sm-none">
+                                <button style={{ marginRight: `1rem` }} className="btn-tt btn-tt-underline">
+                                    <Link to="/">Trang chủ</Link>
+                                </button>
+                                <button style={{ marginleft: `1rem` }} className="btn-tt btn-tt-underline">
+                                    <Link to="/contact">Liên lạc</Link>
+                                </button>
+                            </p>
                         </div>
                         {this.state.products.map(product =>
                             <div className="col-12 col-sm-4 mb-4">
