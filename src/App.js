@@ -6,6 +6,7 @@ import { Route, Switch, BrowserRouter as Router } from 'react-router-dom'
 import NavbarMain from './components/Navbar/Navbar';
 import HomePage from './routes/Home/Home';
 import Product from './routes/Product/Product';
+import ContactPage from './routes/Contact/Contact';
 
 
 
@@ -22,8 +23,8 @@ function App() {
           <Route path="/products">
             <Product></Product>
           </Route>
-          <Route path="/users">
-            user works!
+          <Route path="/contact">
+            <ContactPage></ContactPage>
           </Route>
           <Route path="/">
             <HomePage></HomePage>

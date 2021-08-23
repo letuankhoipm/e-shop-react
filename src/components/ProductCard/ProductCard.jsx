@@ -5,35 +5,18 @@ class ProductCard extends React.Component {
     render() {
         return (
             <div className="product-card">
-                <div className="card tt-card">
-                    <img className="card-img-top tt-img-card mt-1" src={this.props.product.imageUrl} alt="product" />
+                <div className="card tt-card rounded-0">
+                    <img className="card-img-top rounded-0 tt-img-card" src={this.props.product.imageUrl} alt="product" />
+
                     <div className="card-body">
-                        <h5 className="font-weight-bold text-center">
+                        <h5 className="font-weight-bold text-uppercase text-center">
                             {this.props.product.name}
                         </h5>
-                        <p className="card-text">
-                            {this.props.product.shortDescription}
-                        </p>
+                        <hr />
                         <p className="text-center">
                             <strong className="mr-2">$</strong>
                             <span>
                                 {this.props.product.price}
-                            </span>
-                        </p>
-                        <p className="text-left">
-                            <span>
-                                Xuất xứ:
-                                <strong className="px-2">
-                                    {this.props.product.origin}
-                                </strong>
-                            </span>
-                        </p>
-                        <p className="text-left">
-                            <span>
-                                Thương hiệu:
-                                <strong className="px-2">
-                                    {this.props.product.brand}
-                                </strong>
                             </span>
                         </p>
                     </div>

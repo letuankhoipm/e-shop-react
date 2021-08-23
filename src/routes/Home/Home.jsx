@@ -10,16 +10,16 @@ class HomePage extends React.Component {
         // console.log(data);
         return (
             <div className="tt-home-page">
-                <section className="tt-carousel mb-4">
+                <section className="tt-carousel mb-sm-4 d-none d-sm-block">
                     <CarouselItem></CarouselItem>
                 </section>
-                <section className="tt-about mb-4">
+                <section className="tt-about mb-4 d-none d-sm-block">
                     <AboutUs></AboutUs>
                 </section>
-                <section className="tt-banner-ad mb-4">
+                <section className="tt-banner-ad mb-4 d-none d-sm-block">
                     <AdvertiseBanner></AdvertiseBanner>
                 </section>
-                <section className="tt-gallery mb-4">
+                <section className="tt-gallery mb-4 d-none d-sm-block">
                     <GalleryImage></GalleryImage>
                 </section>
             </div>

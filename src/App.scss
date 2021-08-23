@@ -1,11 +1,14 @@
 @import url('https://use.fontawesome.com/releases/v5.4.1/css/all.css');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
 @import '../public/assets/scss/button';
 @import '../public/assets/scss/general';
 @import '../public/assets/scss/input';
 
 
 .App {
-  font-family: "Nunito", sans-serif;
+  font-family: 'Inter', sans-serif;
   background-color: transparent;
 }
 

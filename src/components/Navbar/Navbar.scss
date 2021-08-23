@@ -1,46 +1,25 @@
-.tt-navbar-mobile {
-    .tt-side-menu {
-        height: 100vh;
-        width: 100%;
-        background-size: cover;
-        transform: translate(100%, -10%);
-        z-index: 10000;
-        transition-duration: .4s;
-    }
-
-    .tt-after-stretch {
-        transform: translate(10%, -10%);
-        transition-duration: .4s;
-    }
-
-    .tt-list {
-        margin-top: 150px;
-        margin-bottom: 150px;
-    }
+.tt-logo {
+    width: 70px;
 }
 
 .tt-nav-item {
     list-style-type: none;
     text-transform: uppercase;
     font-weight: bold;
-    font-family: "Nunito",
-        sans-serif;
+    font-family: 'Inter', sans-serif;
     background-color: transparent;
     padding-top: 10px;
     padding-bottom: 10px;
 
-    &:hover {
-        background: black;
-        transition-duration: .4s;
-        color: white;
-    }
-
     a {
-        color: black;
+        color: white;
+        padding: 5px 0;
+        border-bottom: 2px solid transparent;
         text-decoration: none !important;
 
         &:hover {
-            color: white;
+            border-bottom: 2px solid white;
+            transition-duration: .4s;
         }
     }
 }
@@ -51,12 +30,13 @@
     }
 }
 
-.tt-header {
-    height: 150px;
-    background: black;
-    margin-bottom: 70px;
-}
-
 .tt-title {
     font-size: 3rem;
+}
+
+.tt-navbar {
+    background: rgba(32, 32, 32, .6) !important;
+    position: fixed;
+    width: 100vw;
+    z-index: 1000;
 }

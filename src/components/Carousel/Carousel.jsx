@@ -13,7 +13,7 @@ class CarouselItem extends React.Component {
                         src={`${process.env.PUBLIC_URL}/assets/images/a1.jpg`}
                         alt="First slide" />
                     <Carousel.Caption>
-                        <h3>First slide label</h3>
+                        <h1 className="tt-font-curve">First slide label</h1>
                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -24,7 +24,7 @@ class CarouselItem extends React.Component {
                         alt="Second slide" />
 
                     <Carousel.Caption>
-                        <h3>Second slide label</h3>
+                        <h1 className="tt-font-curve">Second slide label</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -35,7 +35,7 @@ class CarouselItem extends React.Component {
                         alt="Third slide" />
 
                     <Carousel.Caption>
-                        <h3>Third slide label</h3>
+                        <h1 className="tt-font-curve">Third slide label</h1>
                         <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                     </Carousel.Caption>
                 </Carousel.Item>

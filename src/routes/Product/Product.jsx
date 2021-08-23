@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import ProductCard from '../../components/ProductCard/ProductCard'
 import CoreService from "../../services/core.service";
+import "./Product.scss"
 
 class Product extends React.Component {
     constructor(props) {
@@ -37,21 +38,20 @@ class Product extends React.Component {
         return (
             <div className="tt-product">
                 <div className="tt-header y-4">
-                    <div className="text-white p-4">
-                        <p>
-                            Trang chủ /
-                            <strong>
-                                Sản phẩm
-                            </strong>
-                        </p>
+                    <div className="tt-banner-prod h-100">
+                        <img className="w-100 g-100 tt-banner-img" src={`${process.env.PUBLIC_URL}/assets/images/banner.jpg`} alt="#" />
+                        <h1 className="tt-title-banner text-white text-center">
+                            Bộ sưu tập
+                        </h1>
                     </div>
                 </div>
                 <div className="container">
                     <div className="row">
-                        <div className="col-12 text-center mb-4 pb-4">
-                            <h1 className="tt-title">
-                                SẢN PHẨM
-                            </h1>
+                        <div className="col-12 mb-4 pb-4">
+                            <h3 className="font-weight-bold tt-hot tt-font-curve">
+                                Nổi bật
+                            </h3>
+                            <hr />
                         </div>
                         {this.state.products.map(product =>
                             <div className="col-12 col-sm-4 mb-4">
@@ -59,6 +59,7 @@ class Product extends React.Component {
                             </div>
                         )}
                     </div>
+                    <hr />
                 </div>
             </div >
         )

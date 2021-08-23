@@ -4,12 +4,11 @@ import './Footer.scss';
 class Footer extends React.Component {
     render() {
         return (
-            <div className="tt-footer-main">
-
-                <div className="tt-footer">
+            <div className="tt-footer-main  d-none d-sm-block" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/images/bem.svg'})` }}>
+                <div className="tt-footer" >
                     <div className="container">
                         <div className="row">
-                            <div className="col-12 col-sm-3 tt-footer-logo text-center">
+                            <div className="col-12 col-sm-3 tt-footer-logo">
                                 <img src="assets/images/logo-black.png" alt="logo" className="w-75" />
                                 <p className="mt-4">
                                     Hãy để chính bạn làm tôn lên vẻ đẹp của mình.
@@ -38,8 +37,8 @@ class Footer extends React.Component {
                                 </p>
                             </div>
                             <div className="col-12 col-sm-3">
-                                <p className="font-weight-bold">
-                                    HÃY ĐĂNG KÝ ĐỂ NHẬN TIN
+                                <p className="font-weight-bold tt-curve">
+                                    Đăng ký để nhận tin
                                 </p>
                                 <div className="tt-newsletter">
                                     <div className="form-group">

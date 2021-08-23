@@ -169,6 +169,15 @@ class GalleryImage extends React.Component {
         const scrollingElement = window;
         return (
             <div className="tt-gallery text-center py-4 my-4">
+                <div className="container">
+                    <div className="row">
+                        <hr />
+                        <h1 className="font-weight-bold text-right my-4 tt-font-curve">
+                            Thư viện hình ảnh
+                        </h1>
+                        <p className="text-right">Những hình ảnh sinh động nhất về thế giới mỹ phẩm.</p>
+                    </div>
+                </div>
                 <ProGallery
                     items={items}
                     options={options}
@@ -177,6 +186,12 @@ class GalleryImage extends React.Component {
                     scrollingElement={scrollingElement}
 
                 />
+                <div className="container">
+                    <div className="row">
+                        <hr className="mt-4" />
+                    </div>
+                </div>
+
             </div>
         )
     }
