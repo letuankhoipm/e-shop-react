@@ -1,74 +1,40 @@
 import React from 'react'
 import { ProGallery } from 'pro-gallery';
 import 'pro-gallery/dist/statics/main.css';
+import CoreService from "../../services/core.service";
 
 class GalleryImage extends React.Component {
+    constructor(props) {
+        super(props);
+        this.ref = CoreService.onGetCollection('gallery');
+        this.subscribe = null;
+        this.state = {
+            galleries: []
+        };
+    }
+
+    onHandleData = (querySnapshot) => {
+        const galleries = [];
+        const galleryModal = {
+            mediaUrl: null,
+            metaData: {
+                height: null,
+                width: null,
+            }
+        }
+        CoreService.onHandlingData(querySnapshot, galleryModal, galleries);
+        this.setState({
+            galleries
+        })
+        console.log(galleries);
+    }
+    componentDidMount() {
+        this.unsubscribe = this.ref.onSnapshot(this.onHandleData);
+    }
+
     render() {
         const items = [
-            { // Image item:
-                itemId: 'sample-id',
-                mediaUrl: 'https://i.picsum.photos/id/674/200/300.jpg?hmac=kS3VQkm7AuZdYJGUABZGmnNj_3KtZ6Twgb5Qb9ITssY',
-                metaData: {
-                    type: 'image',
-                    height: 200,
-                    width: 100,
-                    title: 'sample-title',
-                    description: 'sample-description',
-                    focalPoint: [0, 0],
-                    link: {
-                        url: 'http://example.com',
-                        target: '_blank'
-                    },
-                }
-            },
-            { // Another Image item:
-                itemId: 'differentItem',
-                mediaUrl: 'https://i.picsum.photos/id/1003/1181/1772.jpg?hmac=oN9fHMXiqe9Zq2RM6XT-RVZkojgPnECWwyEF1RvvTZk',
-                metaData: {
-                    type: 'image',
-                    height: 200,
-                    width: 700,
-                    title: 'sample-title',
-                    description: 'sample-description',
-                    focalPoint: [0, 0],
-                    link: {
-                        url: 'http://example.com',
-                        target: '_blank'
-                    },
-                }
-            },
-            { // Another Image item:
-                itemId: 'differentItem',
-                mediaUrl: 'https://i.picsum.photos/id/1003/1181/1772.jpg?hmac=oN9fHMXiqe9Zq2RM6XT-RVZkojgPnECWwyEF1RvvTZk',
-                metaData: {
-                    type: 'image',
-                    height: 200,
-                    width: 500,
-                    title: 'sample-title',
-                    description: 'sample-description',
-                    focalPoint: [0, 0],
-                    link: {
-                        url: 'http://example.com',
-                        target: '_blank'
-                    },
-                }
-            },
-            { // Another Image item:
-                itemId: 'differentItem',
-                mediaUrl: 'https://i.picsum.photos/id/1003/1181/1772.jpg?hmac=oN9fHMXiqe9Zq2RM6XT-RVZkojgPnECWwyEF1RvvTZk',
-                metaData: {
-                    type: 'image',
-                    height: 200,
-                    width: 500,
-                    title: 'sample-title',
-                    description: 'sample-description',
-                    focalPoint: [0, 0],
-                    link: {
-                        url: 'http://example.com',
-                        target: '_blank'
-                    },
-                }
-            },
+           
             { // Another Image item:
                 itemId: 'differentItem',
                 mediaUrl: 'https://i.picsum.photos/id/1003/1181/1772.jpg?hmac=oN9fHMXiqe9Zq2RM6XT-RVZkojgPnECWwyEF1RvvTZk',
@@ -164,7 +130,7 @@ class GalleryImage extends React.Component {
             height: window.innerHeight
         };
 
-        const eventsListener = (eventName, eventData) => console.log({ eventName, eventData });
+        const eventsListener = (eventName, eventData) => console.log();
 
         const scrollingElement = window;
         return (
@@ -179,7 +145,7 @@ class GalleryImage extends React.Component {
                     </div>
                 </div>
                 <ProGallery
-                    items={items}
+                    items={this.state.galleries}
                     options={options}
                     container={container}
                     eventsListener={eventsListener}

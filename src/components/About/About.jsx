@@ -11,8 +11,12 @@ class AboutUs extends React.Component {
                             <h1 className="font-weight-bold text-right my-4 tt-font-curve">
                                 Thế giới mỹ phẫm của bạn
                             </h1>
-                            <p>
-                                Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang phục vụ cho in ấn. Lorem Ipsum đã được sử dụng như một văn bản chuẩn cho ngành công nghiệp in ấn từ những năm 1500, khi một họa sĩ vô danh ghép nhiều đoạn văn bản với nhau để tạo thành một bản mẫu văn bản. Đoạn văn bản này không những đã tồn tại năm thế kỉ, mà khi được áp dụng vào tin học văn phòng, nội dung của nó vẫn không hề bị thay đổi. Nó đã được phổ biến trong những năm 1960 nhờ việc bán những bản giấy Letraset in những đoạn Lorem Ipsum, và gần đây hơn, được sử dụng trong các ứng dụng dàn trang, như Aldus PageMaker.
+                            <p className="justify-content text-right">
+                                Chào mừng đến với TIẾU TIẾU STORE – Nơi mang đến vẻ đẹp, theo đuổi sự xinh đẹp, sở hữu vẻ đẹp và giá trị riêng của bản thân chưa chạm tới.
+                                Ở đây, tôi mong muốn mang đến cho quý khách hàng của mình những sản phẩm tốt nhất, chất lượng tốt – giá tốt nhất thị trường, góp phần cải thiện vẻ đẹp khuyết thiếu, giúp nét đẹp bạn tự tin hơn, tỏa sáng hơn. Luôn tôn trọng và lắng nghe, chia sẻ cùng khách hàng.
+                                <br />
+                                TIẾU TIẾU STORE mong muốn xây dựng thành công thương hiệu riêng của bản thân và sẽ cố gắng hết mình, đem đến sản phẩm tốt nhất về mọi mặt đến phái đẹp.
+                                Cảm ơn quý khách hàng đã ghé thăm và hẹn gặp lại quý khách.
                             </p>
                             <img className="mt-4 w-25" src={`${process.env.PUBLIC_URL}/assets/images/sign.png`} alt="" />
                             <p className="text-right">
