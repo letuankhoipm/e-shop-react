@@ -25,6 +25,7 @@ class AboutUs extends React.Component {
                         </div>
                     </div>
                 </div>
+                <hr />
             </div>
         )
     }
