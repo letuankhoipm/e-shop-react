@@ -1,0 +1,11 @@
+react "advance" thì về performance,
+re-render,
+react design pattern,
+lazy load, 
+split, 
+suspend,
+hooks advance,
+bundle optimize, 
+unit test với jest,
+snapshot test với enzyme
+testing library
